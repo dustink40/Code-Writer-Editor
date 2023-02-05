@@ -7,7 +7,7 @@ function Home() {
       <section className="flex flex-col text-center gap-6">
         <Text variant="h1">Welcome to a new era of recovery support</Text>
         <Text className="text-zinc-600 text-center ">
-          S.A.R.A. is Serenim`s AI Recovery Assistant. She was built by OSR to aid those in need of support. In any capacity. She is recovery focused, but capable of so much more. Go ahead and ask her anything, and start owning your path.
+          S.A.R.A. is Serenium`s AI Recovery Assistant. She was built by OSR to aid those in need of support. In any capacity. She is recovery focused, but capable of so much more. Go ahead and ask her anything, and start owning your path.
         </Text>
       </section>
 

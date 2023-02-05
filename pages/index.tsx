@@ -1,9 +1,9 @@
-import { Layout, Text, Page } from '@vercel/examples-ui'
+import { /*Layout,*/ Text, Page } from '@vercel/examples-ui'
 import { Chat } from '../components/Chat'
 
 function Home() {
   return (
-    <Page className="flex flex-col gap-12">
+    <Page className="flex flex-col align-middle text-center gap-12">
       <section className="flex flex-col gap-6">
         <Text variant="h1">Welcome to a new era of recovery support</Text>
         <Text className="text-zinc-600">
@@ -11,9 +11,9 @@ function Home() {
         </Text>
       </section>
 
-      <section className="flex flex-col gap-3">
+      <section className="flex align-middle flex-col gap-3">
         <Text variant="h2">Chat with S.A.R.A:</Text>
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3 align-middle">
           <Chat />
         </div>
       </section>
@@ -21,6 +21,6 @@ function Home() {
   )
 }
 
-Home.Layout = Layout
+//Home.Layout = Layout
 
 export default Home

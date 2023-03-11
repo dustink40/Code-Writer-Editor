@@ -10,7 +10,7 @@ This example shows how to implement a simple chat bot using Next.js, API Routes,
 
 ## Demo
 
-https://ai-chatgpt.vercel.app
+https://sara02.opensourcerecovery.life
 
 ## How to Use
 

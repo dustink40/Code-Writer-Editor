@@ -7,12 +7,12 @@ function Home() {
       <section className="flex flex-col text-center gap-6">
         <Text variant="h1">Welcome to a new era of recovery support</Text>
         <Text className="text-zinc-600 text-center ">
-          S.A.R.A. is Serenium`s AI Recovery Assistant. She was built by OSR to aid those in need of support. In any capacity. She is recovery focused, but capable of so much more. Go ahead and ask her anything, and start owning your path.
+          D.E.C.K.E.X.P.E.R.T is Guttermade's Chat-GPT AI construction Assistant. It was built by Dustin Keith and Ryan Fortin to help people in building decks. In any capacity. She is construction focused, but capable of so much more. Go ahead and ask it anything, and start planning your project.
         </Text>
       </section>
 
       <section className="flex flex-col gap-3">
-        <Text variant="h2">Chat with S.A.R.A:</Text>
+        <Text variant="h2">Chat with D.E.C.K.E.X.P.E.R.T:</Text>
         <div className="lg:w-4/4">
           <Chat />
         </div>

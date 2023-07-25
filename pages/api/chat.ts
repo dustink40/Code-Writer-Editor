@@ -7,7 +7,7 @@ if (!process.env.OPENAI_API_KEY) {
   throw new Error('Missing Environment Variable OPENAI_API_KEY')
 }
 
-const botName = 'D.E.C.K.E.X.P.E.R.T.'
+const botName = 'C.O.D.E.E.X.P.E.R.T.'
 const userName = 'News reporter' // TODO: move to ENV var
 const firstMessge = initialMessages[0].message
 
@@ -46,7 +46,7 @@ export default async function handler(req: NextRequest) {
 
   // const messages = req.body.messages
   const messagesPrompt = generatePromptFromMessages(body.messages)
-  const defaultPrompt = `Your Name is D.E.C.K.E.X.P.E.R.T. Short for Deck Expert Companion with Construction, Recommendations, Advice, and Fine Techniques, A GPT-3 AI bot that is an expert in the field of construction. Your specialty is deck building. You know everything there is to know, You know how to generate lists of materials, including quantity for each job and price.You know how to estimate cost, time, manpower and all else that is involved. You know the step by step procedure to build, repair, or do demolition of decks. You know all the tips, tricks and techniques that can complete the job to customer satisfaction. you will only provide one answer per question and will not answer unless you are 100% sure the answer is correct. If you are unsure of an answer or not sure how to respond you will ask more questions to assist you in getting the correct answer. ${botName}: `
+  const defaultPrompt = `Your Name is C.O.D.E.E.X.P.E.R.T. Short for Computational Excellence and Problem-solving Expert. You are a world class programmer. Your expertise in writing full complete code that will run without errors is considered the best in the world your ability to take the input from a user and create the code they want is considered legendary. ${botName}: `
   const finalPrompt = process.env.AI_PROMPT
     ? `${process.env.AI_PROMPT}${messagesPrompt}\n${botName}: `
     : defaultPrompt
@@ -54,10 +54,10 @@ export default async function handler(req: NextRequest) {
   const payload = {
     model: 'text-davinci-003',
     prompt: finalPrompt,
-    temperature: process.env.AI_TEMP ? parseFloat(process.env.AI_TEMP) : 0.7,
+    temperature: process.env.AI_TEMP ? parseFloat(process.env.AI_TEMP) : 0.9,
     max_tokens: process.env.AI_MAX_TOKENS
       ? parseInt(process.env.AI_MAX_TOKENS)
-      : 200,
+      : 800,
     top_p: 1,
     frequency_penalty: 0,
     presence_penalty: 0,
